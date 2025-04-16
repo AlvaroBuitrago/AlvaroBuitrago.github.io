@@ -31,7 +31,7 @@ button {
   grid-area: aside;
 }
 .container > main {
-  grid-area: menu;
+  grid-area: main;
 }
 .container > footer {
   grid-area: footer;
