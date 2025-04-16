@@ -23,16 +23,16 @@ button {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
 }
-.container > header {
+.container > div.header {
   grid-area: header;
   text-align: center;
 }
-.container > aside {
+.container > div.aside {
   grid-area: aside;
 }
-.container > main {
+.container > div.main {
   grid-area: main;
 }
-.container > footer {
+.container > div.footer {
   grid-area: footer;
 }
