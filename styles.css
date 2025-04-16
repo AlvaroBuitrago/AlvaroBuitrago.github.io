@@ -28,10 +28,10 @@ button {
   text-align: center;
 }
 .container > aside {
-  grid-area: menu;
+  grid-area: aside;
 }
 .container > main {
-  grid-area: content;
+  grid-area: menu;
 }
 .container > footer {
   grid-area: footer;
