@@ -18,27 +18,34 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div class="container">
-    <div class="header">
+    <div class="container-fluid bg-primary p-1"> <!-- bg-primary = #2196F3 -->
+  <!-- Header -->
+  <div class="row">
+    <div class="col-12 bg-white p-2 text-center"> <!-- header -->
       <h1>Página web de pruebas</h1>
     </div>
-    <div class="aside">
+  </div>
+
+  <!-- Contenido principal (aside + main) -->
+  <div class="row g-1"> <!-- g-1 = gap de 5px -->
+    <aside class="col-md-3 bg-white p-2"> <!-- aside -->
       <p>Texto lateral</p>
       <a href="http://CrearMusica2.blogspot.com" target="_blank">Mi página web</a>
-      <a href="album.html">Ir al álbum</a>
+    </aside>
 
-      
-    </div>
-    <div class="main">
-      <button type="button" class="btn btn-primary" id="contadorBoton">Contador</button>
+    <main class="col-md-9 bg-white p-2"> <!-- main -->
+      <button class="btn btn-secondary my-2 mx-auto d-block">Contador</button>
       <p id="contadorTexto"></p>
-      
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div class="row">
+    <div class="col-12 bg-white p-2"> <!-- footer -->
+      <!-- Contenido del footer -->
     </div>
-    <div class="footer">
-      <p>© Álvaro J. Buitrago, 2025</p>
-    </div>
-   
-    </div>
+  </div>
+</div>
      <script src="script.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </body>
