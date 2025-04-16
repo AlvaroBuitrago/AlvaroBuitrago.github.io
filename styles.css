@@ -3,6 +3,30 @@
   text-align: center;
 }
 
+// Bootstrap css
+// Functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
 button {
   margin: 10px auto;
   padding: 5px 20px;
@@ -19,20 +43,25 @@ button {
   background-color: #2196F3;
   padding: 5px;
 }
+
 .container > div {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
 }
+
 .container > div.header {
   grid-area: header;
   text-align: center;
 }
+
 .container > div.aside {
   grid-area: aside;
 }
+
 .container > div.main {
   grid-area: main;
 }
+
 .container > div.footer {
   grid-area: footer;
 }
